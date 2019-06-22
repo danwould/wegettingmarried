@@ -1,6 +1,6 @@
 import React from "react"
 import axios from "axios"
-//import * as qs from "query-string"
+import * as qs from "query-string"
 
 class Form extends React.Component {
   constructor(props) {
@@ -18,25 +18,22 @@ class Form extends React.Component {
     // Loop through this component's refs (the fields) and add them to the
     // formData object. What we're left with is an object of key-value pairs
     // that represent the form data we want to send to Netlify.
-    //const formData = {}
-    //Object.keys(this.refs).map(key => (formData[key] = this.refs[key].value))
+    const formData = {}
+    Object.keys(this.refs).map(key => (formData[key] = this.refs[key].current.value))
 
-    const formData = {
-      name: this.nameRef.current.value,
-      email: this.emailRef.current.value,
-      message: this.messageRef.current.value
-    }
-
-
-    //console.log(qs.stringify(formData));
+    // const formData = {
+    //   name: this.nameRef.value,
+    //   email: this.emailRef.value,
+    //   message: this.messageRef.value
+    // }
 
     // Set options for axios. The URL we're submitting to
     // (this.props.location.pathname) is the current page.
     const axiosOptions = {
-      url: "https://wegettingmarried.info",
+      url: "https://wegettingmarried.info/",
       method: "post",
       headers: { "Content-Type": "application/x-www-form-urlencoded" },
-      data: JSON.stringify(formData),
+      data: qs.stringify(formData),
     }
 
     // Submit to Netlify. Upon success, set the feedback message and clear all
