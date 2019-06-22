@@ -10,7 +10,6 @@ const defaultProps = {
 }
 
 const mapStyles = require('./map-styles.json')
-console.log(mapStyles);
 
 function createMapOptions(maps) {
   return {
