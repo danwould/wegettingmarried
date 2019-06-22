@@ -20,7 +20,7 @@ class Form extends React.Component {
     // that represent the form data we want to send to Netlify.
     const formData = {}
     Object.keys(this.refs).map(key => (formData[key] = this.refs[key].value))
-    console.log(qs.stringify(formData));
+    //console.log(qs.stringify(formData));
 
     // const formData = {
     //   name: this.nameRef.value,
@@ -69,19 +69,19 @@ class Form extends React.Component {
       <>
         {this.state.feedbackMsg && <p>{this.state.feedbackMsg}</p>}
 
-        <form ref={this.domRef} name="Contact Form" method="POST" data-netlify="true" data-netlify-honeypot="bot-field">
+        <form ref={this.domRef} name="Contact Form" method="POST" data-netlify="true" data-netlify-honeypot="bot-field" onSubmit={event => this.handleSubmit(event)}>
           <input type="hidden" name="bot-field" />
           <input ref="form-name" type="hidden" name="form-name" value="Contact Form" />
           <div className="form-element input">
-            <input ref={this.nameRef} type="name" name="name" onKeyUp={this.handleKeyPress}/>
+            <input type="name" name="name" onKeyUp={this.handleKeyPress}/>
             <label htmlFor="name">Name</label>
           </div>
           <div className="form-element input">
-            <input ref={this.emailRef} type="email" name="email" onKeyUp={this.handleKeyPress}/>
+            <input type="email" name="email" onKeyUp={this.handleKeyPress}/>
             <label htmlFor="email">Email Address</label>
           </div>
           <div className="form-element textarea">
-            <textarea ref={this.messageRef} name="message" onKeyUp={this.handleKeyPress}/>
+            <textarea name="message" onKeyUp={this.handleKeyPress}/>
             <label htmlFor="message">Leave a message</label>
           </div>
           <button type='submit'>Send</button>
