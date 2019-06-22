@@ -69,7 +69,7 @@ class Form extends React.Component {
       <>
         {this.state.feedbackMsg && <p>{this.state.feedbackMsg}</p>}
 
-        <form name="Contact Form" method="POST" data-netlify="true" data-netlify-honeypot="bot-field" onSubmit={event => this.handleSubmit(event)}>
+        <form name="Contact Form" method="POST" data-netlify="true" data-netlify-honeypot="bot-field">
           <input type="hidden" name="bot-field" />
           <input ref="form-name" type="hidden" name="form-name" value="Contact Form" />
           <div className="form-element input">
