@@ -18,14 +18,14 @@ class Form extends React.Component {
     // Loop through this component's refs (the fields) and add them to the
     // formData object. What we're left with is an object of key-value pairs
     // that represent the form data we want to send to Netlify.
-    const formData = {}
-    Object.keys(this.refs).map(key => (formData[key] = this.refs[key].value))
+    //const formData = {}
+    //Object.keys(this.refs).map(key => (formData[key] = this.refs[key].value))
 
-    // const formData = {
-    //   name: this.nameRef.value,
-    //   email: this.emailRef.value,
-    //   message: this.messageRef.value
-    // }
+    const formData = {
+      "name": this.nameRef.value,
+      "email": this.emailRef.value,
+      "message": this.messageRef.value
+    }
 
     // Set options for axios. The URL we're submitting to
     // (this.props.location.pathname) is the current page.
