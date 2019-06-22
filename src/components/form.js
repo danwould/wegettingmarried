@@ -21,18 +21,14 @@ class Form extends React.Component {
     //const formData = {}
     //Object.keys(this.refs).map(key => (formData[key] = this.refs[key].value))
 
-    // const formData = {
-    //   name: this.nameRef.current.value,
-    //   email: this.emailRef.current.value,
-    //   message: this.messageRef.current.value
-    // }
-    //let formData = new FormData();
-    let name = this.nameRef.current.value;
-    let email = this.emailRef.current.value;
-    let message = this.messageRef.current.value;
+    const formData = {
+      name: this.nameRef.current.value,
+      email: this.emailRef.current.value,
+      message: this.messageRef.current.value
+    }
 
 
-    //console.log(formData);
+    //console.log(qs.stringify(formData));
 
     // Set options for axios. The URL we're submitting to
     // (this.props.location.pathname) is the current page.
@@ -40,11 +36,7 @@ class Form extends React.Component {
       url: "https://wegettingmarried.info",
       method: "post",
       headers: { "Content-Type": "application/x-www-form-urlencoded" },
-      data: {
-        name: name,
-        email: email,
-        message: message
-      }
+      data: JSON.stringify(formData),
     }
 
     // Submit to Netlify. Upon success, set the feedback message and clear all
