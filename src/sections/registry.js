@@ -38,7 +38,7 @@ const Registry = () => (
       <section className="section section-mikeyfund column gray-background">
         <img src={ribbonIcon} alt="logo" className="icon"/>
         <h3>Research GIST in honor Mikey</h3>
-        <p>Donations to the UC San Diego cancer research fund un memory of our beloved Michael G Wood</p>
+        <p>Donations to the UC San Diego cancer research fund in memory of our beloved Michael G. Wood</p>
         <p>In the memo line: Fund #2570 - SDH Research Fund.</p>
         <a href="http://bit.ly/Donate4Mikey" target="_blank" rel="noopener noreferrer" className="button">Donate</a>
       </section>

@@ -35,7 +35,7 @@ const Intro = () => (
         <div className="betrothed-wrapper">
           <h3>Daniel Patrick Wood</h3>
           <p>Son of Mr. Sean &<br/>Mrs. Sheila Wood</p>
-          <p><strong>AKA Danbo, Rodan, Danny Boy</strong></p>
+          <p><strong>AKA Danbo, Danny Boy, Rodan</strong></p>
         </div>
       </div>
     </div>
