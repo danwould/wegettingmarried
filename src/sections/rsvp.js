@@ -3,7 +3,7 @@ import React from "react"
 import Section from "../components/section-layout"
 import Form from "../components/form"
 
-const Rsvp = () => (
+const Rsvp = ({ props }) => (
         <Section className="section-rsvp">
           <div className="fifty-fifty-row">
             <div className="column">

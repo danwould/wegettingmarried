@@ -6,9 +6,6 @@ class Form extends React.Component {
   constructor(props) {
     super(props)
     this.domRef = React.createRef()
-    this.nameRef = React.createRef()
-    this.emailRef = React.createRef()
-    this.messageRef = React.createRef()
     this.state = { feedbackMsg: null }
   }
 
@@ -24,7 +21,7 @@ class Form extends React.Component {
     // Set options for axios. The URL we're submitting to
     // (this.props.location.pathname) is the current page.
     const axiosOptions = {
-      url: this.props.location.pathname,
+      url: "https://wegettingmarried.info/",
       method: "post",
       headers: { "Content-Type": "application/x-www-form-urlencoded" },
       data: qs.stringify(formData),

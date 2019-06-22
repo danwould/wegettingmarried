@@ -7,7 +7,7 @@ import CeremonyReception from "../sections/cermony-reception"
 import Registry from "../sections/registry"
 import Rsvp from "../sections/rsvp"
 
-const IndexPage = () => (
+const IndexPage = (props) => (
   <Layout>
     <Intro />
     <CeremonyReception />
