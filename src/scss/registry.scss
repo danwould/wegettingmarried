@@ -1,0 +1,40 @@
+.section-registry {
+  .section {
+    padding: 2rem 3rem;
+
+    p {
+      max-width: 28rem;
+      margin-left: auto;
+      margin-right: auto;
+    }
+  }
+
+  .bottom-section {
+    .logo-wrapper {
+      max-width: 20rem;
+      margin: 2rem auto 0;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+
+      .column {
+        &:first-child {
+          margin-right: 1.5rem;
+        }
+
+        &:last-child {
+          margin-left: 1.5rem;
+        }
+      }
+
+      .buttomn {
+        margin-top: 2rem;
+      }
+    }
+  }
+
+  .icon {
+    max-height: 8em;
+    margin: 2rem auto;
+  }
+}

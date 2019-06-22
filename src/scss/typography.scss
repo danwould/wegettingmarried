@@ -1,0 +1,42 @@
+body {
+  color: #FFF;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-weight: bold;
+  line-height: 1.1;
+}
+
+h1 {
+  font-size: 6.25rem;
+}
+h2 {
+  font-size: 3.750rem;
+  font-weight: 300;
+}
+h3 {
+  font-size: 1.38316rem;
+}
+h4 {
+  font-size: 1rem;
+}
+h5 {
+  font-size: 0.85028rem;
+}
+h6 {
+  font-size: 0.78405rem;
+}
+p {
+  margin-bottom: 1.3rem;
+}
+a {
+  color: #FFF;
+
+  &:hover {
+    color: gold;
+  }
+}
+ul {
+  margin-left: 0;
+  list-style: none;
+}
