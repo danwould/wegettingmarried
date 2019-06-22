@@ -1,6 +1,6 @@
 import React from "react"
 import axios from "axios"
-import * as qs from "query-string"
+//import * as qs from "query-string"
 
 class Form extends React.Component {
   constructor(props) {
@@ -22,10 +22,11 @@ class Form extends React.Component {
     //Object.keys(this.refs).map(key => (formData[key] = this.refs[key].value))
 
     const formData = {
-      "name": this.nameRef.value,
-      "email": this.emailRef.value,
-      "message": this.messageRef.value
+      "name": this.nameRef.current.value,
+      "email": this.emailRef.current.value,
+      "message": this.messageRef.current.value
     }
+
 
     // Set options for axios. The URL we're submitting to
     // (this.props.location.pathname) is the current page.
