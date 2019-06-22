@@ -22,9 +22,9 @@ class Form extends React.Component {
     //Object.keys(this.refs).map(key => (formData[key] = this.refs[key].value))
 
     const formData = {
-      "name": this.nameRef.current.value,
-      "email": this.emailRef.current.value,
-      "message": this.messageRef.current.value
+      name: this.nameRef.current.value,
+      email: this.emailRef.current.value,
+      message: this.messageRef.current.value
     }
 
 
