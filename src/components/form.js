@@ -33,7 +33,7 @@ class Form extends React.Component {
       url: "https://wegettingmarried.info/",
       method: "post",
       headers: { "Content-Type": "application/x-www-form-urlencoded" },
-      data: qs.stringify(formData),
+      data: formData,
     }
 
     // Submit to Netlify. Upon success, set the feedback message and clear all
