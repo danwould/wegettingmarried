@@ -1,13 +1,13 @@
 import { Link } from "gatsby"
 import PropTypes from "prop-types"
 import React from "react"
+import FluidImage from "./fluid-image"
 
 const Header = ({ siteTitle }) => (
   <header
     style={{
       background: `black`,
       height: `100vh`,
-      marginBottom: `1.45rem`,
       display: `flex`,
       alignItems: 'center',
       justifyContent: `center`
@@ -15,12 +15,14 @@ const Header = ({ siteTitle }) => (
   >
     <div
       style={{
-        margin: `0 auto`,
-        maxWidth: 960,
-        padding: `1.45rem 1.0875rem`,
+        width: `50%`,
+        padding: `0 0 0 1.0875rem`,
       }}
     >
-      <h1 style={{ margin: 0 }}>
+      <h1 style={{
+        margin: 0,
+        textAlign: `center`,
+      }}>
         <Link
           to="/"
           style={{
@@ -31,6 +33,13 @@ const Header = ({ siteTitle }) => (
           {siteTitle}
         </Link>
       </h1>
+    </div>
+    <div
+      style={{
+        width: `50%`
+      }}
+    >
+      <FluidImage filename="hero-image.png" />
     </div>
   </header>
 )

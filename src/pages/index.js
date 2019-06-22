@@ -1,19 +1,18 @@
 import React from "react"
 
 import Layout from "../components/layout"
-import Intro from "../components/intro"
-import Ceremony from "../components/ceremony"
-import Registry from "../components/registry"
-import Reception from "../components/reception"
-import Rsvp from "../components/rsvp"
+
+import Intro from "../sections/intro"
+import CeremonyReception from "../sections/cermony-reception"
+import Registry from "../sections/registry"
+import Rsvp from "../sections/rsvp"
 
 const IndexPage = () => (
   <Layout>
-    <Intro></Intro>
-    <Ceremony></Ceremony>
-    <Reception></Reception>
-    <Registry></Registry>
-    <Rsvp></Rsvp>
+    <Intro />
+    <CeremonyReception />
+    <Registry />
+    <Rsvp />
   </Layout>
 )
 

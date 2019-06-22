@@ -1,0 +1,15 @@
+$dark-gray: #3A3A37;
+$black: #000;
+$muted-gold: #f3e7a8;
+
+html {
+  background-color: $black;
+}
+
+@mixin viewport-m {
+  @media only screen and (max-width: 1068px) { @content; }
+}
+
+@mixin viewport-s {
+  @media only screen and (max-width: 735px) { @content; }
+}

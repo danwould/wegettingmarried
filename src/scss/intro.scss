@@ -1,0 +1,23 @@
+$intro-pic-gap: 5.5rem;
+
+.intro-section {
+  .column {
+    &:first-child {
+      padding-right: $intro-pic-gap;
+
+      .betrothed-wrapper {
+        margin: 0 0 0 auto;
+      }
+    }
+    &:last-child {
+      padding-left: $intro-pic-gap;
+
+      .betrothed-wrapper {
+        margin: 0 auto 0 0;
+      }
+    }
+  }
+
+  .betrothed-wrapper {
+    max-width: 350px;}
+}
