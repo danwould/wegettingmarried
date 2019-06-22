@@ -6,9 +6,9 @@ class Form extends React.Component {
   constructor(props) {
     super(props)
     this.domRef = React.createRef()
-    this.nameRef = React.createRef()
-    this.emailRef = React.createRef()
-    this.messageRef = React.createRef()
+    // this.nameRef = React.createRef()
+    // this.emailRef = React.createRef()
+    // this.messageRef = React.createRef()
     this.state = { feedbackMsg: null }
   }
 
@@ -19,7 +19,8 @@ class Form extends React.Component {
     // formData object. What we're left with is an object of key-value pairs
     // that represent the form data we want to send to Netlify.
     const formData = {}
-    Object.keys(this.refs).map(key => (formData[key] = this.refs[key].current.value))
+    Object.keys(this.refs).map(key => (formData[key] = this.refs[key].value))
+    console.log(qs.stringify(formData));
 
     // const formData = {
     //   name: this.nameRef.value,
@@ -68,7 +69,7 @@ class Form extends React.Component {
       <>
         {this.state.feedbackMsg && <p>{this.state.feedbackMsg}</p>}
 
-        <form ref={this.domRef} name="Contact Form" method="POST" data-netlify="true" data-netlify-honeypot="bot-field" onSubmit={event => this.handleSubmit(event)}>
+        <form ref={this.domRef} name="Contact Form" method="POST" data-netlify="true" data-netlify-honeypot="bot-field">
           <input type="hidden" name="bot-field" />
           <input ref="form-name" type="hidden" name="form-name" value="Contact Form" />
           <div className="form-element input">
