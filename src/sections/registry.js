@@ -20,9 +20,9 @@ const Registry = () => (
         <p>Contributions to the couple’s honeymoon fund can be made by check (payable to Mariecar Mendoza and Dan Wood)</p>
         <p>Or use the following links to contribute digitally</p>
         <div className="bottom-section">
-          <div className="fifty-fifty-row logo-wrapper">
+          <div className="fifty-fifty-row-s logo-wrapper">
             <div className="column">
-              <a href="https://paypal.me/danwoulddesign?locale.x=en_US" target="_blank" rel="noopener noreferrer">
+              <a href="venmo://paycharge?txn=pay&recipients=danwoulddesign&amount=10&note=Note" target="_blank" rel="noopener noreferrer">
                 <img src={venmoLogo} alt="logo"/>
               </a>
             </div>
@@ -48,7 +48,7 @@ const Registry = () => (
       <img src={giftIcon} alt="logo" className="icon"/>
       <h3>Gifts</h3>
       <p>Presents may be purchased at the following retailers:</p>
-      <div className="logo-wrapper fifty-fifty-row">
+      <div className="logo-wrapper fifty-fifty-row-s">
         <div className="column">
           <a href="http://www.heathceramics.com/apps/giftregistry/registry/77543?shared_url=true" target="_blank" rel="noopener noreferrer">
             <img src={heathLogo} alt="logo"/>

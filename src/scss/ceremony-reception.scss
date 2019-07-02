@@ -1,6 +1,14 @@
 .section-ceremony-reception {
   height: 100vh;
 
+  @include viewport-m {
+    height: 130vh;
+  }
+
+  @include viewport-s {
+    height: 163vh;
+  }
+
   .section {
     display: flex;
     flex-wrap: wrap;
@@ -8,6 +16,16 @@
     align-items: center;
     height: 100%;
     padding: 0;
+
+    .section-content {
+      @include viewport-m {
+        padding: $section-padding-top-m 2rem 2%;
+      }
+
+      @include viewport-s {
+        padding: $section-padding-top-s 2rem 2%;
+      }
+    }
   }
 
   .top-section {
@@ -16,15 +34,23 @@
     align-items: center;
     justify-content: center;
     flex-wrap: nowrap;
-  }
 
-  .map-wrapper {
-    height: 50%;
-    width: 100%;
+    @include viewport-m {
+      flex-wrap: wrap;
+      height: auto;
+    }
   }
 
   .column {
     width: 40%;
+
+    @include viewport-m {
+      width: 50%;
+    }
+
+    @include viewport-s {
+      width: 100%;
+    }
   }
 
   .image-wrapper {
@@ -32,6 +58,15 @@
     display: flex;
     align-items: center;
     justify-content: center;
+
+    @include viewport-m {
+      order: 3;
+      margin: 2rem 0 0;
+    }
+
+    @include viewport-s {
+      order: inherit;
+    }
 
     img {
       max-width: 200px;
@@ -50,4 +85,17 @@
 .dress-code {
   text-align: center;
   margin-bottom: 2rem;
+
+  @include viewport-m {
+    margin: 3rem
+  }
+}
+
+.map-wrapper {
+  height: 50%;
+  width: 100%;
+
+  @include viewport-m {
+    height: 35%;
+  }
 }

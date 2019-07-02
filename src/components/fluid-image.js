@@ -45,6 +45,7 @@ const FluidImage = (props) => (
           alt={props.alt}
           sizes={imageSizes}
           style={props.style}
+          className={props.className}
           imgStyle={{
             objectFit:props.objectFit,
           }}

@@ -9,15 +9,15 @@ const Intro = () => (
       <div className="column">
         <FluidImage
           filename="mar.png"
+          className="betrothed-img-wrapper"
           style={{
             borderRadius:"50% 50%",
             maxWidth:"350px",
             maxHeight:"350px",
-            margin: "2rem 0 2rem auto",
             border: "10px solid #f3e7a8"
           }}/>
           <div className="betrothed-wrapper">
-            <h3>Mariecar Penaño Mendoza</h3>
+            <h3>Mariecar Peñano&nbsp;Mendoza</h3>
             <p>Daughter of Mr. Dominador &<br/>Mrs. Adelaida Mendoza.</p>
             <p><strong>AKA Marbo, Tita Diva, PartyCar</strong></p>
           </div>
@@ -25,15 +25,15 @@ const Intro = () => (
       <div className="column">
         <FluidImage
           filename="dan.png"
+          className="betrothed-img-wrapper"
           style={{
             borderRadius:"50% 50%",
             maxWidth:"350px",
             maxHeight:"350px",
-            margin: "2rem auto 2rem 0",
             border: "10px solid #f3e7a8"
           }}/>
         <div className="betrothed-wrapper">
-          <h3>Daniel Patrick Wood</h3>
+          <h3>Daniel Patrick&nbsp;Wood</h3>
           <p>Son of Mr. Sean &<br/>Mrs. Sheila Wood</p>
           <p><strong>AKA Danbo, Danny Boy, Rodan</strong></p>
         </div>

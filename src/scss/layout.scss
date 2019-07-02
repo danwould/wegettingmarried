@@ -8,7 +8,16 @@
   }
 
   .section-content {
-    padding: 9.375rem 5%;
+    padding: $section-padding-top-l 5%;
+
+    @include viewport-m {
+      padding: $section-padding-top-m 3%;
+    }
+
+    @include viewport-s {
+      padding: $section-padding-top-s 2%;
+    }
+
   }
 }
 
@@ -24,6 +33,35 @@
 
     @include viewport-s {
       flex-basis: 100%;
+    }
+  }
+}
+
+
+.fifty-fifty-row-m {
+  @extend .fifty-fifty-row;
+
+  @include viewport-m {
+    flex-wrap: wrap;
+  }
+
+  .column {
+    @include viewport-m {
+      flex-basis: 100%;
+    }
+  }
+}
+
+.fifty-fifty-row-s {
+  @extend .fifty-fifty-row;
+
+  @include viewport-s {
+    flex-wrap: nowrap;
+  }
+
+  .column {
+    @include viewport-s {
+      flex-basis: 50%;
     }
   }
 }

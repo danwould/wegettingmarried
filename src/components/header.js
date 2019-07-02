@@ -4,21 +4,15 @@ import React from "react"
 import FluidImage from "./fluid-image"
 
 const Header = ({ siteTitle }) => (
-  <header
+  <header className="fifty-fifty-row-m"
     style={{
       background: `black`,
       height: `100vh`,
-      display: `flex`,
       alignItems: 'center',
       justifyContent: `center`
     }}
   >
-    <div
-      style={{
-        width: `50%`,
-        padding: `0 0 0 1.0875rem`,
-      }}
-    >
+    <div className="column">
       <h1 style={{
         margin: 0,
         textAlign: `center`,
@@ -34,11 +28,7 @@ const Header = ({ siteTitle }) => (
         </Link>
       </h1>
     </div>
-    <div
-      style={{
-        width: `50%`
-      }}
-    >
+    <div className="column">
       <FluidImage filename="hero-image.png" />
     </div>
   </header>
