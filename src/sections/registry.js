@@ -22,7 +22,7 @@ const Registry = () => (
         <div className="bottom-section">
           <div className="fifty-fifty-row-s logo-wrapper">
             <div className="column">
-              <a href="venmo://paycharge?txn=pay&recipients=danwoulddesign&amount=10&note=Note" target="_blank" rel="noopener noreferrer">
+              <a href="https://venmo.com/danwoulddesign" target="_blank" rel="noopener noreferrer">
                 <img src={venmoLogo} alt="logo"/>
               </a>
             </div>
