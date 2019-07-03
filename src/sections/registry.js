@@ -5,7 +5,6 @@ import ribbonIcon from "../images/ribbon-icon.svg"
 import giftIcon from "../images/giftbox-icon.svg"
 import heathLogo from "../images/heath-logo.svg"
 import candbLogo from "../images/c-and-b-logo.svg"
-import venmoLogo from "../images/venmo-logo.svg"
 import paypalLogo from "../images/paypal-logo.svg"
 
 const Registry = () => (
