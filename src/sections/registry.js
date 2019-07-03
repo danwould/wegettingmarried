@@ -18,14 +18,9 @@ const Registry = () => (
         <img src={honeyFundIcon} alt="logo" className="icon"/>
         <h3>Honeyfund</h3>
         <p>Contributions to the couple’s honeymoon fund can be made by check (payable to Mariecar Mendoza and Dan Wood)</p>
-        <p>Or use the following links to contribute digitally</p>
+        <p>Or find us at Venmo </p>
         <div className="bottom-section">
           <div className="fifty-fifty-row-s logo-wrapper">
-            <div className="column">
-              <a href="https://venmo.com/danwoulddesign" target="_blank" rel="noopener noreferrer">
-                <img src={venmoLogo} alt="logo"/>
-              </a>
-            </div>
             <div className="column">
               <a href="https://paypal.me/danwoulddesign?locale.x=en_US" target="_blank" rel="noopener noreferrer">
                 <img src={paypalLogo} alt="logo"/>
