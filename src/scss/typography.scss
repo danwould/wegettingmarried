@@ -5,17 +5,28 @@ body {
 h1, h2, h3, h4, h5, h6 {
   font-weight: bold;
   line-height: 1.1;
+  margin: 0 auto;
 }
 
 h1 {
   font-size: 6.25rem;
+
+  @include viewport-s {
+    font-size: 3.5rem;
+  }
 }
 h2 {
   font-size: 3.750rem;
   font-weight: 300;
+  margin-bottom: 2.5rem;
+
+  @include viewport-s {
+    font-size: 2.25rem;
+  }
 }
 h3 {
   font-size: 1.38316rem;
+  margin-bottom: .8rem;
 }
 h4 {
   font-size: 1rem;

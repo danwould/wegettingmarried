@@ -17,7 +17,7 @@ function createMapOptions(maps) {
   }
 }
 
-const AnyReactComponent = ({ text }) => <div>{text}</div>
+const MapPoints = ({ text }) => <div className="map-points">{text}</div>
 
 class GoogleMap extends React.Component {
   render () {
@@ -29,10 +29,17 @@ class GoogleMap extends React.Component {
           defaultZoom={defaultProps.zoom}
           options={createMapOptions}
         >
-          <AnyReactComponent
+          <MapPoints
             lat={37.793061}
             lng={-122.401724}
-            text={'A'}
+            text={"A"}
+            className="map-points"
+          />
+          <MapPoints
+            lat={37.493061}
+            lng={-122.201724}
+            text={"B"}
+            className="map-points"
           />
         </GoogleMapElement>
       </div>
