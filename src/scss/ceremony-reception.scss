@@ -2,11 +2,7 @@
   height: 100vh;
 
   @include viewport-m {
-    height: 130vh;
-  }
-
-  @include viewport-s {
-    height: 163vh;
+    height: auto;
   }
 
   .section {
@@ -96,7 +92,7 @@
   width: 100%;
 
   @include viewport-m {
-    height: 35%;
+    height: 400px;
   }
 
   .map-points {

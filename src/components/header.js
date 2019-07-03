@@ -1,7 +1,8 @@
 import { Link } from "gatsby"
 import PropTypes from "prop-types"
 import React from "react"
-import FluidImage from "./fluid-image"
+//import FluidImage from "./fluid-image"
+import Video from "./video"
 
 const Header = ({ siteTitle }) => (
   <header className="fifty-fifty-row-m"
@@ -29,7 +30,7 @@ const Header = ({ siteTitle }) => (
       </h1>
     </div>
     <div className="column">
-      <FluidImage filename="hero-image.png" />
+      <Video  />
     </div>
   </header>
 )
