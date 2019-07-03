@@ -4,7 +4,7 @@ import videoUrl from '../video/wedding-3.mp4'
 const Video = () => (
   <div className='player-wrapper'>
     <video
-      autoPlay
+      autoplay
       loop
       playsinline
       muted
