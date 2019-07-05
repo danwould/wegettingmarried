@@ -5,7 +5,6 @@ import ribbonIcon from "../images/ribbon-icon.svg"
 import giftIcon from "../images/giftbox-icon.svg"
 import heathLogo from "../images/heath-logo.svg"
 import candbLogo from "../images/c-and-b-logo.svg"
-import paypalLogo from "../images/paypal-logo.svg"
 
 const Registry = () => (
   <Section className="section-registry gray-background">
@@ -16,17 +15,8 @@ const Registry = () => (
       <section className="section section-honeyfund column gray-background">
         <img src={honeyFundIcon} alt="logo" className="icon"/>
         <h3>Honeyfund</h3>
-        <p>Contributions to the couple’s honeymoon fund can be made by check (payable to Mariecar Mendoza and Dan Wood)</p>
-        <p>Or find us at Venmo </p>
-        <div className="bottom-section">
-          <div className="fifty-fifty-row-s logo-wrapper">
-            <div className="column">
-              <a href="https://paypal.me/danwoulddesign?locale.x=en_US" target="_blank" rel="noopener noreferrer">
-                <img src={paypalLogo} alt="logo"/>
-              </a>
-            </div>
-          </div>
-        </div>
+        <p>Contributions to the couple’s honeymoon fund can be made by check <strong>(payable to Mariecar Mendoza & Dan Wood)</strong></p>
+        <p>Or find us on Venmo <strong>@Maridan</strong></p>
       </section>
 
       <section className="section section-mikeyfund column gray-background">

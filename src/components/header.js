@@ -8,8 +8,6 @@ const Header = ({ siteTitle }) => (
   <header className="fifty-fifty-row-m"
     style={{
       background: `black`,
-      height: `100vh`,
-      alignItems: 'center',
       justifyContent: `center`
     }}
   >
