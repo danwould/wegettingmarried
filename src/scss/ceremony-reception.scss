@@ -1,8 +1,10 @@
 .section-ceremony-reception {
   height: 100vh;
+  min-height: 940px;
 
   @include viewport-m {
     height: auto;
+    min-height: auto;
   }
 
   .section {

@@ -9,8 +9,6 @@ import candbLogo from "../images/c-and-b-logo.svg"
 const Registry = () => (
   <Section className="section-registry gray-background">
     <h2>Registry</h2>
-    <p>Here's some of the places we registered at</p>
-
     <div className="top-section fifty-fifty-row">
       <section className="section section-honeyfund column gray-background">
         <img src={honeyFundIcon} alt="logo" className="icon"/>
@@ -21,9 +19,9 @@ const Registry = () => (
 
       <section className="section section-mikeyfund column gray-background">
         <img src={ribbonIcon} alt="logo" className="icon"/>
-        <h3>Research GIST in honor Mikey</h3>
-        <p>Donations to the UC San Diego cancer research fund in memory of our beloved Michael G. Wood</p>
-        <p>In the memo line: Fund #2570 - SDH Research Fund.</p>
+        <h3>In honor of Mikey</h3>
+        <p>Donations to the UC San Diego cancer research fund in memory of our beloved <strong>Michael G. Wood</strong>, brother of the groom whom we lost to <a href="https://health.ucsd.edu/specialties/cancer/programs/gastrointestinal/Pages/gist.aspx" target="_blank" rel="noopener noreferrer">GIST</a></p>
+        <p>In the memo line: <strong>Fund #2570 - SDH Research Fund.</strong></p>
         <a href="http://bit.ly/Donate4Mikey" target="_blank" rel="noopener noreferrer" className="button">Donate</a>
       </section>
     </div>

@@ -32,7 +32,7 @@ class GoogleMap extends React.Component {
           <MapPoints
             lat={37.793061}
             lng={-122.401724}
-            text={"A"}
+            text={"☆"}
             className="map-points"
           />
           <MapPoints
