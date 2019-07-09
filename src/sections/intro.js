@@ -18,7 +18,7 @@ const Intro = () => (
           }}/>
           <div className="betrothed-wrapper">
             <h3>Mariecar Peñano&nbsp;Mendoza</h3>
-            <p>Daughter of Mr. Dominador &<br/>Mrs. Adelaida Mendoza.</p>
+            <p>Daughter of Mr. Dominador &<br/>Mrs. Adelaida Mendoza</p>
             <p><strong>AKA Marbo, Tita Diva, PartyCar</strong></p>
           </div>
       </div>
